@@ -19,5 +19,5 @@ a better understanding of the problems you encountered during the developmemnt o
 - *Faculty Advisor's Name* - *Department* - Faculty Advisor
 - *Jared Dawson* - *Computer Science* - Student Team Member
 - *Mason Delane* - *Computer Science* - Student Team Member
-- *Student's Name* - *major* - Student Team Member
+- *Brianna Barrett* - *Computer Science* - Student Team Member
 - *Student's Name* - *major* - Student Team Member
