@@ -20,4 +20,4 @@ a better understanding of the problems you encountered during the developmemnt o
 - *Jared Dawson* - *Computer Science* - Student Team Member
 - *Mason Delane* - *Computer Science* - Student Team Member
 - *Brianna Barrett* - *Computer Science* - Student Team Member
-- *Student's Name* - *major* - Student Team Member
+- *Kiersten Kofi AdomFrimpong* - *Computer Science* - Student Team Member
