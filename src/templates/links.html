@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<html>
+
+<body>
+    <ul>
+        <li>
+            <a href="{{url_for('lawncare')}}">LawnCareProblem</a>
+        </li>
+        <li>
+            <a href="{{url_for('positivenegative')}}">PositiveNegativeZero</a>
+        </li>
+        <li>
+            <a href="{{url_for('calculator')}}">CalculatorProgram</a>
+        </li>
+        <li>
+            <a href="{{url_for('inputoutput')}}">InputOutputTable</a>
+        </li>
+    </ul>
+</body>
+
+</html>
+
+{% endblock %}
