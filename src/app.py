@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, session, url_for, redirect
 from flask_bootstrap import Bootstrap
+from sqlalchemy import true
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'read my mind'
@@ -8,6 +9,10 @@ app.config['SECRET_KEY'] = 'read my mind'
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/home')
+def home():
+    return render_template('home.html')
 
 
 @app.route('/lawncare')
@@ -36,4 +41,4 @@ def links():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=80,debug=True)
