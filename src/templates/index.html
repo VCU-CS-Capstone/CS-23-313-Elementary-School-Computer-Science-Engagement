@@ -1,24 +1,23 @@
-{% extends "base.html" %}
-{% block content %}
 <html>
 
 <body>
     <h1></h1>
     <h2></h2>
-    <ul>
-        <li>
-            <a href="/~ccbudwell/App">Flowchart App</a>
-        </li>
-        <li>
-            <a href="{{url_for('home')}}">Birthday Program</a>
-        </li>
-        <li>
-            <a href="{{url_for('home')}}">Interactive CS Activities</a>
-        </li>
-        
-    </ul>
+    <div class="options">
+        <ul>
+            <li>
+                <a href="/~ccbudwell/App">Flowchart App</a>
+            </li>
+            <li>
+                <a href="{{url_for('home')}}">Birthday Program</a>
+            </li>
+            <li>
+                <a href="{{url_for('require')}}">Interactive CS Activities</a>
+            </li>
+            
+        </ul>
+    </div>
 </body>
 
 </html>
 
-{% endblock %}

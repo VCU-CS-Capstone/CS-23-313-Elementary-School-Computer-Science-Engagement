@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<html>
+<head>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="options">
+        <ul>
+            <li>
+                <a href="#">Minecraft Exercises</a>
+            </li>
+            <li>
+                <a href="{{url_for('links')}}">Scratch Exercises </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
+
+{% endblock %}

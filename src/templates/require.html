@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<html>
+<body>
+
+  <div class="options">
+    <ul>
+        <li>
+            <a href="{{url_for('nontech')}}">Non Technology Required Exercises </a>
+        </li>
+        <li>
+            <a href="{{url_for('tech')}}">Technology Required Exercises  </a>
+        </li>
+    </ul>
+    </div>
+</body>
+
+</html>
+
+{% endblock %}
