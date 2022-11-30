@@ -1,16 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 <html>
-
+<head>
+    <style>
+        body{background-color: lightgray;}
+            a{color: black;}
+            body{text-align: center; }
+            button{
+                background-color: #FDBD10;
+                margin-top:100px ;
+                align-items: center;
+                padding: 10px;
+            }
+    </style>
+</head>
 <body>
     <div class="options">
         <ul>
-            <li>
-                <a href="#">Fibonacci</a>
-            </li>
-            <li>
-                <a href="#">Insertion Sort</a>
-            </li>
+                <a href="#"><button>Fibonacci</button></a>
+                <a href="#"><button>Insertion Sort</button></a>
         </ul>
     </div>
 </body>

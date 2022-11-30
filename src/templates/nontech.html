@@ -1,18 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
 <html>
-
+<head>
+    <style>
+        body{background-color: lightgray;}
+            a{color: black;}
+            body{text-align: center; }
+        button{
+                background-color: #FDBD10;
+                margin-top:100px ;
+                align-items: center;
+                padding: 10px;
+            }
+    </style>
+</head>
 <body>
 
-    <p>No Technology needed for these exercises </p>
     <div class="options"></div>
         <ul>
-            <li>
-                <a href="{{url_for('sorting')}}"> Sequences/Sorting </a>
-            </li>
-            <li>
-                <a href="#">Binary Numbers</a>
-            </li>
+                <a href="{{url_for('sorting')}}"><button>Sequences/Sorting </button> </a>
+                <a href="#"><button>Binary Numbers</button></a>
         </ul>
     </div>
 </body>

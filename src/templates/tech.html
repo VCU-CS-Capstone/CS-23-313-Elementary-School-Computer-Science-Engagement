@@ -2,7 +2,17 @@
 {% block content %}
 <html>
 <head>
-    <link rel="stylesheet" href="/src/css/style.css">
+    <style>
+        body{background-color: lightgray;}
+            a{color: black;}
+            body{text-align: center; }
+            button{
+                background-color: #FDBD10;
+                margin-top:100px ;
+                align-items: center;
+                padding: 10px;
+            }
+    </style>
 </head>
 
 <body>
@@ -11,12 +21,8 @@
 
     <div class="options">
         <ul>
-            <li>
-                <a href="#">Minecraft Exercises</a>
-            </li>
-            <li>
-                <a href="{{url_for('links')}}">Scratch Exercises </a>
-            </li>
+                <a href="#"><button>Minecraft Exercises</button></a>
+                <a href="{{url_for('links')}}"><button>Scratch Exercises</button> </a>
         </ul>
     </div>
 </body>
