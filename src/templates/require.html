@@ -1,18 +1,58 @@
 {% extends "base.html" %}
 {% block content %}
 <html>
+    <head>
+        <style>
+            body{background-color: lightgray;}
+            a{color: black;}
+            body{text-align: center; }
+            button{
+                background-color: #FDBD10;
+                margin-top:100px ;
+                align-items: center;
+                padding: 10px;
+            }
+            .about{
+                margin-top: 200px;
+                margin-left: 450px;
+                background-color: rgb(82, 82, 82);
+                border-radius: 1vw;
+                display: flex;
+                width: 40%;
+                height: 10vw;
+                min-height: 250px;
+                order: 3;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 0;
+                padding-left: 5%;
+                padding-right: 5%;
+                color: white;
+            }
+        </style>
+    </head>
 <body>
-
+<div>
   <div class="options">
     <ul>
-        <li>
+            <button>
             <a href="{{url_for('nontech')}}">Non Technology Required Exercises </a>
-        </li>
-        <li>
+        </button>
+            <button>
             <a href="{{url_for('tech')}}">Technology Required Exercises  </a>
-        </li>
+        </button>
     </ul>
     </div>
+    <div class="about">
+        <h1>Goal</h1>
+            <p>
+                To implement fun and engaging activities that make students want to learn computer science
+            </p>
+        
+    </div>
+</div>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, session, url_for, redirect
 from flask_bootstrap import Bootstrap
-from sqlalchemy import true
+#from sqlalchemy import true
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'read my mind'
