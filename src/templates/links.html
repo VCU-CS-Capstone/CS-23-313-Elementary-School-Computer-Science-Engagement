@@ -3,17 +3,119 @@
 <html>
 <head>
     <style>
-        body{background-color: lightgray;}
-            a{color: black;}
-            body{text-align: center; }
-            button{
-                background-color: #FDBD10;
-                margin-top:100px ;
-                align-items: center;
-                padding: 10px;
-            }
-    </style>
+        body {
+          background-color: lightgray;
+        }
+          ul{
+              list-style-type: none;
+          }
+        a {
+              color: black;
+          }
+        body {
+              text-align: center;
+          }
+          button {
+              background-color: #fdbd10;
+              margin-top: 100px;
+              align-items: center;
+              padding: 10px;
+              border-radius: 15px;
+              
+          }
+          button:hover {
+              box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+          }
+          .grid_container {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-gap: 10px;
+              padding: 10px;
+              }
+          .title {
+              margin-bottom: 50px;
+          }
+          .difficulty{
+              border-style:none;
+              text-decoration: underline;
+              text-decoration-color: #624902;
+          }
+      </style>
 </head>
+<body>
+    <div class="wraapper">
+      <div class="title">
+        <h1> Scratch Exercises</h1>
+      </div>
+
+      <div class="grid_container">
+        <div class="list">
+          <div class="difficulty">
+            <h2> EASY</h2>
+          </div>
+          <div class="links">
+            <ul>
+              <li>
+                <a href="{{url_for('lawncare')}}"><button>LawnCare Problem</button></a>
+              </li> 
+              <li>
+                <a href="{{url_for('positivenegative')}}"><button>Positive Negative Zero</button></a>
+              </li>
+              <li>
+                <a href="{{url_for('calculator')}}"><button>Calculator Program</button></a>
+              </li>
+              <li>
+                <a href="{{url_for('inputoutput')}}"><button>Input Output Table</button></a>
+              </li>
+              <li>
+                <a href="#"><button>Chick Jumping</button> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="difficulty">
+             <h2> MEDIUM</h2>
+          </div>
+          <div class="links">
+            <!-- <ul>
+              <li>
+                <a href="{{url_for('sorting')}}">
+                  <button>Sequences/Sorting</button>
+                </a>
+              </li>
+              <li>
+                <a href="#"><button>Binary Numbers</button></a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="difficulty">
+            <h2> HARD </h2>
+          </div>
+          <div class="links">
+            <!-- <ul>
+              <li>
+                <a href="{{url_for('sorting')}}">
+                  <button>Sequences/Sorting</button>
+                </a>
+              </li>
+              <li>
+                <a href="#"><button>Binary Numbers</button></a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
+
+{% endblock %}
 <body>
     <div class="options">
         <ul>
@@ -25,7 +127,3 @@
         </ul>
     </div>
 </body>
-
-</html>
-
-{% endblock %}

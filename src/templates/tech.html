@@ -3,27 +3,57 @@
 <html>
 <head>
     <style>
-        body{background-color: lightgray;}
-            a{color: black;}
-            body{text-align: center; }
-            button{
-                background-color: #FDBD10;
-                margin-top:100px ;
+        body{
+            background-color: lightgray;
+        }
+            a{
+                color: black;
+            }
+            body{
+                text-align: center; 
+            }
+            .wrapper {
+                display: grid;
+                grid-gap: 8px;
+                grid-template-rows:1fr 2fr;
+                background-color: lightgray;
+                margin-bottom: 0px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+            .box {
+                    background-color: lightgrey;
+                    /* color: #fff; */
+                    border-radius: 5px;
+                    padding: 20px;
+                    font-size: 150%;
+                    }
+            button {
+                background-color: #fdbd10;
+                margin-top: 100px;
                 align-items: center;
                 padding: 10px;
+                border-radius: 15px;
+                
             }
+        button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
     </style>
 </head>
 
 <body>
-
-
-
-    <div class="options">
+    <div class="wrapper">
+        <div class="box a">
+                <h2>  Technology Required Exercises  </h2>
+      </div>
+      <div class="box b"> 
+          
         <ul>
-                <a href="#"><button>Minecraft Exercises</button></a>
-                <a href="{{url_for('links')}}"><button>Scratch Exercises</button> </a>
-        </ul>
+            <a href="#"><button>Minecraft Exercises</button></a>
+            <a href="{{url_for('links')}}"><button>Scratch Exercises</button> </a>
+    </ul>
+        
+      </div>
     </div>
 </body>
 
