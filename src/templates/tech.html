@@ -1,62 +1,144 @@
-{% extends "base.html" %}
-{% block content %}
+
 <html>
 <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <style>
-        body{
-            background-color: lightgray;
+        body {
+        background-color: white;
+      }
+      .title{
+        font-family: 'Comfortaa';
+        margin-top: 50px;
+      }
+      .difficulty{
+        font-family: 'Comfortaa';
+      }
+      .links{
+        margin-left: -30px;
+        padding-left: -15px;
+      }
+        ul{
+            list-style-type: none;
         }
-            a{
-                color: black;
-            }
-            body{
-                text-align: center; 
-            }
-            .wrapper {
-                display: grid;
-                grid-gap: 8px;
-                grid-template-rows:1fr 2fr;
-                background-color: lightgray;
-                margin-bottom: 0px;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                }
-            .box {
-                    background-color: lightgrey;
-                    /* color: #fff; */
-                    border-radius: 5px;
-                    padding: 20px;
-                    font-size: 150%;
-                    }
-            button {
-                background-color: #fdbd10;
-                margin-top: 100px;
-                align-items: center;
-                padding: 10px;
-                border-radius: 15px;
-                
-            }
+      
+      body {
+            text-align: center;
+        }
+        button {
+          background-color: white;
+              color:#fdbd10;
+              margin-top: 30px;
+              align-items: center;
+              padding-left:70px;
+              padding-right:70px;
+              padding-top: 25px;
+              padding-bottom: 25px;
+              border-radius: 45px;
+              border-style: solid;
+              border-color: #fdbd10;
+              border-width: 4px;
+              font-size: 20px;
+              font-family: 'Montserrat', sans-serif;
+            
+        }
         button:hover {
             box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .grid_container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            padding: 10px;
+            }
+        .title {
+            margin-bottom: 50px;
+        }
+        .difficulty{
+            border-style:none;
+            text-decoration: underline;
+            text-decoration-color: #624902;
         }
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="box a">
-                <h2>  Technology Required Exercises  </h2>
+    <div class="wraapper">
+      <div class="title">
+        <h1> Technology Exercises</h1>
       </div>
-      <div class="box b"> 
-          
-        <ul>
-            <a href="#"><button>Minecraft Exercises</button></a>
-            <a href="{{url_for('links')}}"><button>Scratch Exercises</button> </a>
-    </ul>
-        
+
+      <div class="grid_container">
+        <div class="list">
+          <div class="difficulty">
+            <h2> EASY</h2>
+          </div>
+          <div class="links">
+            <ul>
+              <li>
+                <a href="{{url_for('sorting')}}">
+                  <button>Input<br>Output<br>Table</button>
+                </a>
+              </li>
+              <li>
+                <a href="#"><button>Lawn<br>Care<br>Problem</button></a>
+              </li>
+              <li>
+                <a href="#"><button>Calculator<br>Program</button></a>
+              </li>
+              <li>
+                <a href="#"><button>Positive<br>Negative<br>Zero</button></a>
+              </li>
+              <li>
+                <a href="#"><button>Chick<br>Jumping</button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="difficulty">
+             <h2> MEDIUM</h2>
+          </div>
+          <div class="links">
+            <!-- <ul>
+              <li>
+                <a href="{{url_for('sorting')}}">
+                  <button>Sequences/Sorting</button>
+                </a>
+              </li>
+              <li>
+                <a href="#"><button>Binary Numbers</button></a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="difficulty">
+            <h2> HARD </h2>
+          </div>
+          <div class="links">
+            <!-- <ul>
+              <li>
+                <a href="{{url_for('sorting')}}">
+                  <button>Sequences/Sorting</button>
+                </a>
+              </li>
+              <li>
+                <a href="#"><button>Binary Numbers</button></a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
       </div>
     </div>
 </body>
 
 </html>
 
-{% endblock %}
+
