@@ -1,51 +1,118 @@
-{% extends "base.html" %}
-{% block content %}
+<!-- {% extends "base.html" %}
+{% block content %} -->
 <html>
     <head>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 
         <style>
-            body{background-color: lightgray;
+            @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat&family=Roboto:wght@400;500;700&display=swap');
+
+            body{background-color: white;
                 margin: 0px;
                 margin-bottom: 0px;
                 color: black;
                 
             }
-            
             .wrapper {
                 display: grid;
-                grid-gap: 8px;
-                grid-template-rows:1fr 1fr 2fr;
-                background-color: lightgray;
+                /* grid-gap: 8px; */
+                grid-template-rows:1fr 1fr;
+                background-color: white;
                 margin-bottom: 0px;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-family: 'Comfortaa';
                 }
-            .mission {
-                background-color: #f4e7c4;
+            h1{
+                font-weight: 500;
+                font-size: 100px;
+                text-align: left;
+                padding-left: 50px;
+                margin-bottom: 20px;
             }
+            
+            img{
+                width: 1425px;
+            }
+            .box-a{
+                position: relative;
+            }
+            .welcome{
+                position: absolute;
+                top: 10px;
+                left: 5px;
+                color: white;
+                width: 475px;
+                vertical-align: middle;
+                padding-left: 30px;
+                padding-top: 20px;
+            }
+            .welcome p{
+                font-size: 22px;
+                width:400px;
+                text-align:left;
+                padding-left: 70px;
+                margin: 0px;
+                font-weight: 500;
+                line-height: 35px;
+            }
+            .box-b{
+                margin-bottom: 0px;
+            }
+            .box-b p{
+                font-size: 25px;
+                padding-top: 40px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .box-c{
+                margin-top: 0px;
+            }
+
             div{
                 text-align: center;
                 }
             .box {
-                background-color: lightgrey;
+                background-color: white;
                 /* color: #fff; */
                 border-radius: 5px;
                 padding: 20px;
                 font-size: 150%;
                 }
 
-            a{color: black;
-            }
+            /* a{color: black;
+            } */
+            
             button {
-              background-color: #fdbd10;
-              margin-top: 100px;
+                background-color: white;
+              color:#fdbd10;
+              margin-top: 30px;
               align-items: center;
-              padding: 10px;
-              border-radius: 15px;
+              padding-left:70px;
+              padding-right:70px;
+              padding-top: 25px;
+              padding-bottom: 25px;
+              border-radius: 45px;
+              border-style: solid;
+              border-color: #fdbd10;
+              border-width: 4px;
+              font-size: 25px;
               
           }
           button:hover {
               box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+              cursor: pointer;
+          }
+
+          .buttons{
+            display:inline-block;
+            margin-right: 20px;
+            margin-left: 20px;
+          }
+
+          h3{
+            font-weight: bold;
           }
 
             
@@ -54,28 +121,45 @@
 <body>
 
    <div class="wrapper">
-    <div class="box a">
-            <h1> Welcome !!</h1>
-            <h2>  Here you will find interactive computer science activities. </h2>
+    <div class="box-a">
+        
+            <!-- <h1> WELCOME</h1> -->
+            <img src="/src/images/welcome.jpg" alt="WelcomeBanner">
+            <div class="welcome">
+                <h1>Welcome</h1>
+                <p>Our educational program aims<br> to make computer science (CS) lessons enjoyable for all students.</p>
+            </div>
+            
   </div>
-  <div class="box b">
-        <div class="mission">
-            <h3> Our mission </h3>
-                <p>to implement fun and engaging activities that make students want to learn computer science </p>
-            <!-- <h2>To implement fun and engaging activities that make students want to learn computer science</h2> -->
+  <div class="box-b">
+        <div class=box-b-container> 
+            <p>Listed below are interactive CS activities that will motivate your students to learn.</p> 
+            <!-- <ul> -->
+                <div class="button-container">
+                    <div class="buttons">
+                        <a href="{{url_for('nontech')}}"><button>Non-Technology<br> Required Exercises</button> </a>
+                    </div>
+                    <div class="buttons">
+                        <a href="{{url_for('tech')}}"><button>Technology<br> Required Exercises</button> </a>
+                    </div>
+                </div>
+                    
+                
+                
+                
+            <!-- </ul> -->
         </div>
   </div>
-  <div class="box c"> 
-  	
+  <!-- <div class="box c"> 
     <ul>
-                <a href="{{url_for('nontech')}}"><button>Non Technology Required Exercises</button> </a>
-                <a href="{{url_for('tech')}}"><button>Technology Required Exercises</button> </a>
-        </ul>
+        <a href="{{url_for('nontech')}}"><button>Non Technology Required Exercises</button> </a>
+        <a href="{{url_for('tech')}}"><button>Technology Required Exercises</button> </a>
+    </ul>
     
-  </div>
+  </div> -->
 </div>
 </body>
 
 </html>
 
-{% endblock %}
+<!-- {% endblock %} -->
