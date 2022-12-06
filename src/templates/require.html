@@ -17,6 +17,31 @@
                 color: black;
                 
             }
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+                
+            }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: 'Comfortaa';
+            }
+
+            .topnav a:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                color: black;
+            }
+
+            .topnav a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
             .wrapper {
                 display: grid;
                 /* grid-gap: 8px; */
@@ -27,14 +52,14 @@
                 }
             h1{
                 font-weight: 500;
-                font-size: 100px;
+                font-size: 130px;
                 text-align: left;
                 padding-left: 50px;
                 margin-bottom: 20px;
             }
             
             img{
-                width: 1425px;
+                width: 1825px;
             }
             .box-a{
                 position: relative;
@@ -42,18 +67,18 @@
             .welcome{
                 position: absolute;
                 top: 10px;
-                left: 5px;
+                left: 45px;
                 color: white;
                 width: 475px;
                 vertical-align: middle;
                 padding-left: 30px;
-                padding-top: 20px;
+                padding-top: 40px;
             }
             .welcome p{
-                font-size: 22px;
-                width:400px;
+                font-size: 23px;
+                width:600px;
                 text-align:left;
-                padding-left: 70px;
+                padding-left: 60px;
                 margin: 0px;
                 font-weight: 500;
                 line-height: 35px;
@@ -119,7 +144,9 @@
         </style>
     </head>
 <body>
-
+    <div class="topnav">
+        <a class="home" href="require.html">Home</a>
+      </div>
    <div class="wrapper">
     <div class="box-a">
         
@@ -127,7 +154,7 @@
             <img src="/src/images/welcome.jpg" alt="WelcomeBanner">
             <div class="welcome">
                 <h1>Welcome</h1>
-                <p>Our educational program aims<br> to make computer science (CS) lessons enjoyable for all students.</p>
+                <p>Our educational program aims to make computer science (CS) lessons enjoyable for all students.</p>
             </div>
             
   </div>
