@@ -76,12 +76,6 @@
               box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
               cursor: pointer;
           }
-  
-          .buttons{
-              display:inline-block;
-              margin-right: 20px;
-              margin-left: 20px;
-            }
           .grid_container {
               display: grid;
               grid-template-columns: 1fr 1fr 1fr;
@@ -105,17 +99,65 @@
     </div>
       <div class="wraapper">
         <div class="title">
-          <h1> Non-Technology Exercises</h1>
+          <h1> Scratch Exercises</h1>
         </div>
-        <div class="button-container">
-          <div class="buttons">
-              <a href="binarynumbers.html"><button>Binary<br>Numbers</button> </a>
+  
+        <div class="grid_container">
+          <div class="list">
+            <div class="difficulty">
+              <h2> EASY</h2>
+            </div>
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="inputoutput.html">
+                    <button>Input<br>Output<br>Table</button>
+                  </a>
+                </li>
+                <li>
+                  <a href="jumping.html"><button>Chick<br>Jumping</button></a>
+                </li>
+                
+              </ul>
+            </div>
           </div>
-          <div class="buttons">
-              <a href="algorithms.html"><button>Algorithms</button> </a>
+  
+          <div class="list">
+            <div class="difficulty">
+               <h2> MEDIUM</h2>
+            </div>
+            <div class="links">
+              <!-- <ul>
+                <li>
+                  <a href="{{url_for('sorting')}}">
+                    <button>Sequences/Sorting</button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"><button>Binary Numbers</button></a>
+                </li>
+              </ul> -->
+            </div>
           </div>
-      </div>
-      
+  
+          <div class="list">
+            <div class="difficulty">
+              <h2> HARD </h2>
+            </div>
+            <div class="links">
+              <!-- <ul>
+                <li>
+                  <a href="{{url_for('sorting')}}">
+                    <button>Sequences/Sorting</button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"><button>Binary Numbers</button></a>
+                </li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
       </div>
   </body>
   
