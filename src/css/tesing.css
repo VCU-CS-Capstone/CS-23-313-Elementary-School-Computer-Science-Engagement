@@ -1,0 +1,55 @@
+/* css hamburger menu  */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger:hover .line {
+    background-color: #fff;
+  }
+  
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation li {
+    margin-bottom: 10px;
+  }
+  
+  .navigation a {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .navigation a:hover {
+    color: #fff;
+  }
+  
