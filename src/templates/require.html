@@ -51,65 +51,6 @@
                 color: white;
             }
 
-          /* The dropdown container */
-            .dropdown {
-            float: left;
-            overflow: hidden;
-            }
-
-            /* Dropdown button */
-            .dropdown .dropbtn {
-            font-size: 16px;
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 16px;
-            background-color: inherit;
-            font-family: inherit; /* Important for vertical align on mobile phones */
-            margin: 0; /* Important for vertical align on mobile phones */
-            }
-
-            /* Add a red background color to navbar links on hover */
-            .navbar a:hover, .dropdown:hover .dropbtn {
-            background-color: red;
-            }
-
-            /* Dropdown content (hidden by default) */
-            .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            }
-
-            /* Links inside the dropdown */
-            .dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-            }
-
-            /* Add a grey background color to dropdown links on hover */
-            .dropdown-content a:hover {
-            background-color: #ddd;
-            }
-
-            /* Show the dropdown menu on hover */
-            .dropdown:hover .dropdown-content {
-            display: block;
-            }
-            .dropdown-nested {
-            display: none;
-            }
-
-            .dropdown li:hover .dropdown-nested {
-            display: block;
-            }
             .wrapper {
                 display: grid;
                 /* grid-gap: 8px; */
@@ -177,7 +118,7 @@
             /* a{color: black;
             } */
             
-            button {
+            button{
                 background-color: white;
               color:#fdbd10;
               margin-top: 30px;
@@ -208,6 +149,79 @@
             font-weight: bold;
           }
 
+          /* The dropdown container */
+            .dropdown {
+            float: left;
+            overflow: hidden;
+            }
+
+            /* Dropdown button */
+            .dropdown .dropbtn {
+            border: none;
+            outline: none;
+            padding: 14px 16px;
+            background-color: inherit;
+            margin: 0; /* Important for vertical align on mobile phones */
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Comfortaa';
+            }
+
+            /* Dropdown content (hidden by default) */
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 45px;
+            }
+
+            /* Links inside the dropdown */
+            .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+            /* Add a grey background color to dropdown links on hover */
+            .dropdown-content a:hover {
+            background-color: #ddd;
+            }
+
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+
+            .dropdown-nested {
+            display: none;
+            }
+
+            .dropdown-nested a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+            .dropdown-nested a:hover {
+            background-color: #ddd;
+            }
+
+            .dropdown:hover .dropdown-nested {
+            display: block;
+            }
+
        
             
         </style>
@@ -216,29 +230,45 @@
     <div class="topnav">
         <a class="home" href="require.html">Home</a>
         <!-- <div class="dropdown">
+            <p class="dropbtn">Menu
+                <i class="fa fa-caret-down"></i>
+            </p>
+            <div class="dropdown-content">
+                <a>Non-Technology Exercises</a>
+                    <ul class="dropdown-nested">
+                        <a>Scratch</a>
+                        <a>Snap</a>
+                        <a>Minecraft</a>
+                    </ul>
+                <a>Technology Exercises</a>
+                    <ul class="dropdown-nested">
+                    <a>Binary Numbers</a>
+                    <a>Algorithms</a>
+                    </ul>
+        </div> -->
+
+        <div class="dropdown">
             <button class="dropbtn">Menu  
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <ul class="dropdown">
-                <li>
-                <a href="#">Technology Exercises </a>
+              
+                <a>Technology Exercises </a>
                 <ul class="dropdown-nested">
-                    <a href="#">Scratch  </a>
-                    <a href="#">Snap</a>
-                    <a href="#">Minecraft</a>
+                    <a href="scratch.html">Scratch  </a>
+                    <a href="snap.html">Snap</a>
+                    <a href="minecraft.html">Minecraft</a>
                     </ul>
-                
-                <li>
-                <a href="#">Non-Technology Exercises</a>
+                <a>Non-Technology Exercises</a>
                 <ul class="dropdown-nested">
-                    <a href="#">Binary Numbers </a>
-                    <a href="#">Algorithm</a>
+                    <a href="binarynumbers.html">Binary Numbers </a>
+                    <a href="algorithms.html">Algorithms</a>
                     
             </ul>
          
-        </div> -->
-        
+        </div>
+
+        </div>
     </div>
       
     
@@ -256,7 +286,6 @@
   <div class="box-b">
         <div class=box-b-container> 
             <p>Listed below are interactive CS activities that will motivate your students to learn.</p> 
-            <!-- <ul> -->
                 <div class="button-container">
                     <div class="buttons">
                         <a href="nontech.html"><button>Non-Technology<br> Exercises</button> </a>
@@ -266,16 +295,9 @@
                     </div>
                 </div>
                 
-            <!-- </ul> -->
         </div>
   </div>
-  <!-- <div class="box c"> 
-    <ul>
-        <a href="{{url_for('nontech')}}"><button>Non Technology Required Exercises</button> </a>
-        <a href="{{url_for('tech')}}"><button>Technology Required Exercises</button> </a>
-    </ul>
-    
-  </div> -->
+  
 </div>
 </body>
 
