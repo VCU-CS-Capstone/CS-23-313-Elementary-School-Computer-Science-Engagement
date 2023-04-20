@@ -1,257 +1,229 @@
-
 <html>
-    <head>
-    
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
-        <style>
-            body {
-            background-color: white;
-            margin: 0px;
-          }
-  
-  
-  
-  
-          .topnav {
-                    overflow: hidden;
-                    background-color: #333;
-                }
-    
-          .topnav a {
-              float: left;
-              color: #f2f2f2;
-              text-align: center;
-              padding: 14px 16px;
-              text-decoration: none;
-              font-size: 17px;
-              font-family: 'Comfortaa';
-          }
-    
-          .topnav a:hover {
-              box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-              color: black;
-          }
-    
-          .topnav a.active {
-              background-color: #04AA6D;
-              color: white;
-          }
-          .title{
-            font-family: 'Comfortaa';
-            margin-top: 50px;
-          }
-          .difficulty{
-            font-family: 'Comfortaa';
-          }
-          .links{
-            margin-left: -30px;
-            padding-left: -15px;
-          }
-            ul{
-                list-style-type: none;
-            }
-          
-          body {
-                text-align: center;
-            }
-            button {
-              background-color: white;
-                  color:#fdbd10;
-                  margin-top: 30px;
-                  align-items: center;
-                  padding-left:70px;
-                  padding-right:70px;
-                  padding-top: 25px;
-                  padding-bottom: 25px;
-                  border-radius: 45px;
-                  border-style: solid;
-                  border-color: #fdbd10;
-                  border-width: 4px;
-                  font-size: 20px;
-                  font-family: 'Montserrat', sans-serif;
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+        background-color: white;
+        margin: 0px;
+      }
+      .topnav {
+                overflow: hidden;
+                background-color: #333;
                 
             }
-            button:hover {
-                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-                cursor: pointer;
-            }
-            .grid_container {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-gap: 10px;
-                padding: 10px;
-                }
-            .title {
-                margin-bottom: 50px;
-            }
-            .difficulty{
-                border-style:none;
-                text-decoration: underline;
-                text-decoration-color: #624902;
-            }
-            /* The dropdown container */
-            .dropdown {
-              float: left;
-              overflow: hidden;
-              }
-  
-              /* Dropdown button */
-              .dropdown .dropbtn {
-              border: none;
-              outline: none;
-              padding: 14px 16px;
-              background-color: inherit;
-              margin: 0; /* Important for vertical align on mobile phones */
-              float: left;
-              color: #f2f2f2;
-              text-align: center;
-              text-decoration: none;
-              font-size: 17px;
-              font-family: 'Comfortaa';
-              }
-  
-              /* Dropdown content (hidden by default) */
-              .dropdown-content {
-              display: none;
-              position: absolute;
-              background-color: #f9f9f9;
-              min-width: 160px;
-              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-              z-index: 1;
-              top: 45px;
-              }
-  
-              /* Links inside the dropdown */
-              .dropdown-content a {
-              float: none;
-              color: black;
-              padding: 12px 16px;
-              text-decoration: none;
-              display: block;
-              text-align: left;
-              }
-  
-              /* Add a grey background color to dropdown links on hover */
-              .dropdown-content a:hover {
-              background-color: #ddd;
-              }
-  
-              /* Show the dropdown menu on hover */
-              .dropdown:hover .dropdown-content {
-              display: block;
-              }
-  
-              .dropdown-nested {
-              display: none;
-              }
-  
-              .dropdown-nested a {
-              float: none;
-              color: black;
-              padding: 12px 16px;
-              text-decoration: none;
-              display: block;
-              text-align: left;
-              }
-  
-              .dropdown-nested a:hover {
-              background-color: #ddd;
-              }
-  
-              .dropdown:hover .dropdown-nested {
-              display: block;
-              }
-        </style>
-    </head>
-    
-    <body>
-      <div class="topnav">
-        <a class="home" href="require.html">Home</a>
-        <a class="home" href="tech.html">Back</a>
-        <div class="dropdown">
-          <button class="dropbtn">Menu  
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
+
+      .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+          font-family: 'Comfortaa';
+      }
+
+      .topnav a:hover {
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+          color: black;
+      }
+
+      .topnav a.active {
+          background-color: #04AA6D;
+          color: white;
+      }
+      .title{
+        font-family: 'Comfortaa';
+        margin-top: 50px;
+      }
+      .difficulty{
+        font-family: 'Comfortaa';
+      }
+      .links{
+        margin-left: -30px;
+        padding-left: -15px;
+      }
+        ul{
+            list-style-type: none;
+        }
+      
+      body {
+            text-align: center;
+        }
+        button {
+          background-color: white;
+              color:#fdbd10;
+              margin-top: 30px;
+              align-items: center;
+              padding-left:70px;
+              padding-right:70px;
+              padding-top: 25px;
+              padding-bottom: 25px;
+              border-radius: 45px;
+              border-style: solid;
+              border-color: #fdbd10;
+              border-width: 4px;
+              font-size: 20px;
+              font-family: 'Montserrat', sans-serif;
             
-              <a href="tech.html">Technology Exercises </a>
-              <ul class="dropdown-nested">
-                  <a href="scratch.html">Scratch  </a>
-                  <a href="snap.html">Snap</a>
-                  <a href="minecraft.html">Minecraft</a>
-                  <a href="blocky.html">Blocky</a>
-                  </ul>
-              <a href="nontech.html">Non-Technology Exercises</a>
-              <ul class="dropdown-nested">
-                  <a href="binarynumbers.html">Binary Numbers </a>
-                  <a href="algorithms.html">Algorithms</a>
-                  
-          </ul>
-       
+        }
+        button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            cursor: pointer;
+        }
+
+        .buttons{
+            display:inline-block;
+            margin-right: 20px;
+            margin-left: 20px;
+          }
+        .grid_container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            padding: 10px;
+            }
+        .title {
+            margin-bottom: 50px;
+        }
+        .difficulty{
+            border-style:none;
+            text-decoration: underline;
+            text-decoration-color: #624902;
+        }
+        /* The dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            }
+
+            /* Dropdown button */
+            .dropdown .dropbtn {
+            border: none;
+            outline: none;
+            padding: 14px 16px;
+            background-color: inherit;
+            margin: 0; /* Important for vertical align on mobile phones */
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Comfortaa';
+            }
+
+            /* Dropdown content (hidden by default) */
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 45px;
+            }
+
+            /* Links inside the dropdown */
+            .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+            /* Add a grey background color to dropdown links on hover */
+            .dropdown-content a:hover {
+            background-color: #ddd;
+            }
+
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+
+            .dropdown-nested {
+            display: none;
+            }
+
+            .dropdown-nested a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+            .dropdown-nested a:hover {
+            background-color: #ddd;
+            }
+
+            .dropdown:hover .dropdown-nested {
+            display: block;
+            }
+    </style>
+</head>
+
+<body>
+  <div class="topnav">
+    <a class="home" href="require.html">Home</a>
+    <a class="home" href="tech.html">Back</a>
+    <div class="dropdown">
+      <button class="dropbtn">Menu  
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        
+          <a href="tech.html">Technology Exercises </a>
+          <ul class="dropdown-nested">
+              <a href="scratch.html">Scratch  </a>
+              <a href="snap.html">Snap</a>
+              <a href="minecraft.html">Minecraft</a>
+              <a href="blocky.html">Blocky</a>
+              </ul>
+          <a href="nontech.html">Non-Technology Exercises</a>
+          <ul class="dropdown-nested">
+              <a href="binarynumbers.html">Binary Numbers </a>
+              <a href="algorithms.html">Algorithms</a>
+              
+      </ul>
+   
+  </div>
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="wraapper">
+      <div class="title">
+        <h1> Blocky Exercises</h1>
       </div>
-  
-      </div>
-      </div>
-        <div class="wraapper">
-          <div class="title">
-            <h1> Blocky Exercises</h1>
-          </div>
-    
-          <div class="grid_container">
-            <div class="list">
-              <div class="difficulty">
-                <h2> EASY</h2>
-              </div>
-              <div class="links">
-                <!-- <ul>
-                  <li>
-                    <a href="hourofcode.html"><button>Hour of Code</button></a>
-                  </li>
-                </ul> -->
-              </div>
-            </div>
-    
-            <div class="list">
-              <div class="difficulty">
-                 <h2> MEDIUM</h2>
-              </div>
-              <div class="links">
-                <!-- <ul>
-                  <li>
-                    <a href="{{url_for('sorting')}}">
-                      <button>Sequences/Sorting</button>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"><button>Binary Numbers</button></a>
-                  </li>
-                </ul> -->
-              </div>
-            </div>
-    
-            <div class="list">
-              <div class="difficulty">
-                <h2> HARD </h2>
-              </div>
-              <div class="links">
-                <ul>
-                  <li>
-                    <a href="blockygame.html">
-                      <button>Blocky Maze</button>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <div class="button-container">
+        <div class="buttons">
+            <a href="blockygame.html"><button>Blocky Maze</button> </a>
         </div>
-    </body>
+      
+    </div>
     
-    </html>
-    
-    
-    
+    </div>
+</body>
+
+</html>
